@@ -1,0 +1,83 @@
+.pepe-bolt {
+    bottom: 35px;
+    left: 0;
+    width: 587px;
+    height: 707px;
+    background: url('jose.png') repeat 0 0 transparent;
+    animation: walk 1s steps(10) infinite, out 10s steps(1000) infinite;
+    margin-left: -1000px;
+    margin-top: 180px;
+    z-index: 10;
+    position: relative;
+}
+
+@keyframes walk {
+  100% { background-position: -5870px; }
+}
+
+@keyframes out {
+  100% { margin-left: 2000px; }
+}
+
+@keyframes right-sol {
+  100% { margin-right: 2000px; }
+}
+
+@keyframes move {
+100% {background-position: 1800px 0px; }
+}
+
+@keyframes move-back {
+100% {background-position: -1800px 0px; }
+}
+
+.track {
+    width:5870px;
+    height:100px;
+    margin-top: -40px;
+}
+
+.holder {
+    position: absolute;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    background-image: url("sky.jpg");
+    background-size: 100%;
+}
+
+.suelo {
+  left: 0; bottom: 0;
+  width: 1900px;
+  height: 180px;
+  margin-bottom: -50px;
+  z-index: 10;
+  position: absolute;
+  overflow: hidden;
+  background-image: url('suelo.jpg');
+  animation: move-back 5s steps(1000) infinite forwards;
+}
+
+.sol {
+    right: 0;
+    top:  0;
+    margin-right: -1000px;
+    width: 513px;
+    height: 513px;
+    position: absolute;
+    overflow: hidden;
+    background-image: url('josec.png');
+    animation: right-sol 5s steps(1000) infinite forwards;
+  }
+
+.tuberia {
+  position: absolute;
+  top:  -250px;
+  width: 1087px;
+  height: 2000px;
+  margin-left: 1000px;
+  z-index: 1;
+  background-image: url('tuberia.png');
+  transform: scale(0.2);
+}
